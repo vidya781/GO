@@ -1,0 +1,34 @@
+
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	complex1 := complex(10, 4)
+	complex2 := 1 + 4i
+	complex3 := complex1 * complex2
+	complex4 := complex1 / complex2
+	complex5 := complex2 / complex1
+	complex6 := complex2 * complex1
+	fmt.Println("complex Number 1", complex1)
+	fmt.Println("complex Number 2:", complex2)
+	fmt.Println("complex Number 3:", complex3)
+	fmt.Println("complex Number 4:", complex4)
+	fmt.Println("complex Number 5:", complex5)
+	fmt.Println("complex Number 6:", complex6)
+	fmt.Println("Real Number 1:", real(complex1))
+	fmt.Println("Imaginary Number 1:", imag(complex1))
+	fmt.Println("Real Number 1:", real(complex2))
+	fmt.Println("Imaginary Number 2:", imag(complex2))
+	fmt.Println("Real Number 3:", real(complex3))
+	fmt.Println("Imaginary Number 3:", imag(complex3))
+	fmt.Println("Real Number 4:", real(complex4))
+	fmt.Println("Imaginary Number 4:", imag(complex4))
+	fmt.Println("Real Number 5:", real(complex5))
+	fmt.Println("Imaginary Number 5:", imag(complex5))
+	fmt.Println("Real Number 6:", real(complex6))
+	fmt.Println("Imaginary Number 6:", imag(complex6))
+}
