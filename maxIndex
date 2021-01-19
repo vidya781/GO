@@ -1,0 +1,23 @@
+This program demonstrates maxIndex
+
+package main
+
+import "fmt"
+
+func max(arrays []int, length int)int {
+   var maxIndex = 0 // the index of the maximum
+   for j := 1; j < length; j++ {
+      if arrays[maxIndex] < arrays[j] {
+        maxIndex = j
+      }
+   }
+   return arrays[maxIndex]
+}
+
+func main() {
+   var scores = [] int{60,80,95,50,70}
+   var length = len(scores)
+   var maxValue = max(scores, length)
+   fmt.Printf("Max Value = %d\n",maxValue)
+
+}
