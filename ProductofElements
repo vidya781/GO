@@ -1,0 +1,14 @@
+
+package main
+import "fmt"
+
+func main() {
+	a := [4]float64{3.5, 7.2, 4.8, 9.5}
+	prod := float64(1.0)
+
+	for i := 0; i < len(a); i++ {
+		prod = prod*a[i]
+	}
+
+	fmt.Printf("Product of all the elements in array  %v = %f\n", a, prod)
+}
